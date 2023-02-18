@@ -1,0 +1,34 @@
+{
+    "name": "vladaurbanek/beauty-mail",
+    "description": "Send beautiful html emails with Laravel",
+	"keywords": ["laravel", "html", "email"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emil Sundberg",
+            "email": "emil@snowfire.net"
+        },
+        {
+            "name": "Vlada Urbanek",
+            "email": "jsem@vladaurbanek.cz"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "4.* || 5.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0",
+	    "pelago/emogrifier": "^v7.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Snowfire\\Beautymail\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Snowfire\\Beautymail\\BeautymailServiceProvider"
+            ]
+        }
+    }
+}
